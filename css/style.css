@@ -1,0 +1,289 @@
+/* Importação da fonte VT323 do Google Fonts, para o estilo de terminal/Pip-Boy. */
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+/* Estilos globais do corpo da página */
+body {
+  font-family: "VT323", monospace;
+  background-color: #1a1a1a;
+  color: #32cd32;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-shadow: 0 0 5px rgba(50, 205, 50, 0.5);
+}
+
+/* Estilos do Cabeçalho */
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 5px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  z-index: 500;
+}
+
+/* Estilos do nome/título */
+header h1 {
+  font-size: 3em;
+  margin-bottom: 5px;
+  color: #adff2f;
+  text-shadow: 0 0 8px rgba(173, 255, 47, 0.6);
+}
+
+/* Estilos do parágrafo de subtítulo */
+header p {
+  font-size: 1.2em;
+  color: #adff2f;
+  margin-top: 0;
+  text-shadow: 0 0 5px rgba(173, 255, 47, 0.5);
+}
+
+/* Estilos do conteúdo principal*/
+main {
+  flex-grow: 1;
+  display: flex;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  margin-top: 100px;
+  overflow-y: auto;
+  background-color: #1a1a1a;
+}
+
+/* Estilos da seção "Sobre Mim" */
+.about {
+  flex: 2;
+  padding-right: 40px;
+  text-align: left;
+  max-width: 60%;
+}
+
+/* Estilos do título "Sobre Mim" */
+.about h2 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  color: #32cd32;
+  text-shadow: 0 0 10px rgba(50, 205, 50, 0.6);
+  line-height: 1;
+}
+
+/* Estilos do parágrafo na seção "Sobre Mim" */
+.about p {
+  font-size: 1.3em;
+  line-height: 1.6;
+  color: #adff2f;
+  text-shadow: 0 0 3px rgba(173, 255, 47, 0.4);
+  margin-bottom: 20px;
+}
+
+/* Estilos da seção "Skills" */
+.skills {
+  flex: 1;
+  text-align: left;
+  padding-left: 40px;
+  position: relative;
+}
+
+/* Estilos da linha vertical separadora */
+.skills::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 30px;
+  height: 350px;
+  left: 20px;
+  width: 1px;
+  background-color: #32cd32;
+  z-index: 1;
+}
+
+/* Estilos do título "Skills" */
+.skills h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #32cd32;
+  text-shadow: 0 0 8px rgba(50, 205, 50, 0.6);
+  position: sticky;
+  top: 20px;
+}
+
+/* Estilos da linha decorativa abaixo do título "Skills" */
+.skills h2::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #32cd32;
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+/* Estilos do contêiner de habilidades */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+/* Estilos de cada item de habilidade individual */
+.skills-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #32cd32;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.2s ease;
+  box-shadow: 0 0 5px rgba(50, 205, 50, 0.3);
+  cursor: pointer;
+  position: relative;
+}
+
+/* Efeitos de hover para itens de habilidade */
+.skills-item:hover {
+  background-color: rgba(50, 205, 50, 0.1);
+  border-color: #adff2f;
+  transform: translateX(5px);
+  box-shadow: 0 0 10px rgba(50, 205, 50, 0.6);
+}
+
+/* Estilos da linha decorativa cada item de habilidade */
+.skills-item::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 2px;
+  background-color: #32cd32;
+  margin-right: 10px;
+}
+
+/* Estilos das imagens (ícones) dentro dos itens de habilidade */
+.skills-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+/* Estilos do parágrafo (nome da habilidade) */
+.skills-item p {
+  font-size: 1.2em;
+  color: #adff2f;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Estilos do rodapé */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 5px;
+  color: #adff2f;
+  font-size: 1em;
+  text-shadow: 0 0 3px rgba(173, 255, 47, 0.4);
+  box-shadow: 0 -2px 10px rgba(50, 205, 50, 0.4);
+  z-index: 600;
+}
+
+/* Responsividade */
+
+/* Estilos para telas médias (max-width: 900px), como tablets */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    padding: 30px 20px;
+    margin-top: 80px;
+  }
+
+  .about {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .about h2 {
+    font-size: 3.5em;
+  }
+
+  .about p {
+    font-size: 1.1em;
+  }
+
+  .skills {
+    padding-left: 0;
+    border-left: none;
+    text-align: center;
+  }
+
+  .skills::before {
+    display: none;
+  }
+
+  .skills h2::after {
+    margin: 10px auto 0;
+  }
+
+  .skills-grid {
+    align-items: center;
+  }
+
+  .skills-item {
+    width: 80%;
+    max-width: 300px;
+    justify-content: flex-start;
+  }
+
+  .skills-item::before {
+    display: none;
+  }
+
+  .skills-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .skills-item p {
+    font-size: 1.1em;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}
+
+/* Estilos para telas pequenas (max-width: 480px), como smartphones */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .about h2 {
+    font-size: 2.5em;
+  }
+
+  .about p {
+    font-size: 1em;
+  }
+
+  .skills h2 {
+    font-size: 2.5em;
+  }
+  footer {
+    padding: 10px;
+  }
+}
