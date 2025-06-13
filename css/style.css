@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   height: 100vh;
   text-shadow: 0 0 5px rgba(50, 205, 50, 0.5);
+  box-sizing: border-box;
 }
 
 /* Estilos do Cabeçalho */
@@ -20,16 +21,28 @@ header {
   text-align: left;
   padding: 5px 40px 20px 40px;
   position: absolute;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   top: 0;
   width: 100%;
   background-color: #1a1a1a;
   z-index: 500;
+  box-sizing: border-box;
+}
+
+header div.title-group {
+  text-align: left;
+  margin-right: auto;
+  flex-shrink: 0;
 }
 
 /* Estilos do nome/título */
 header h1 {
   font-size: 3em;
   margin-bottom: 5px;
+  margin-top: 0;
   color: #adff2f;
   text-shadow: 0 0 8px rgba(173, 255, 47, 0.6);
 }
@@ -40,6 +53,36 @@ header p {
   color: #adff2f;
   margin-top: 0;
   text-shadow: 0 0 5px rgba(173, 255, 47, 0.5);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none; /* **NOVO**: Remove o sublinhado padrão dos links */
+  color: #32cd32; /* **NOVO**: Cor verde Pip-Boy para os links */
+  font-size: 1.1em; /* **NOVO**: Tamanho da fonte dos links */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* **NOVO**: Transição suave para efeitos de hover */
+  text-shadow: 0 0 3px rgba(50, 205, 50, 0.4); /* **NOVO**: Brilho sutil */
+}
+
+.nav-links li a:hover {
+  color: #adff2f; /* **NOVO**: Cor verde mais clara no hover */
+  text-shadow: 0 0 8px rgba(173, 255, 47, 0.6); /* **NOVO**: Brilho mais forte no hover */
 }
 
 /* Estilos do conteúdo principal*/
