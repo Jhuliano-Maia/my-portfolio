@@ -55,6 +55,7 @@ header p {
   text-shadow: 0 0 5px rgba(173, 255, 47, 0.5);
 }
 
+/* Estilo do bloco de navegação*/
 .main-nav {
   display: flex;
   align-items: center;
@@ -64,25 +65,31 @@ header p {
   justify-content: flex-end;
 }
 
+/* Estilo do grupo de itens da navegação*/
 .nav-links {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
+/* Estilo dos itens da navegação*/
 .nav-links li a {
-  text-decoration: none; /* **NOVO**: Remove o sublinhado padrão dos links */
-  color: #32cd32; /* **NOVO**: Cor verde Pip-Boy para os links */
-  font-size: 1.1em; /* **NOVO**: Tamanho da fonte dos links */
-  transition: color 0.3s ease, text-shadow 0.3s ease; /* **NOVO**: Transição suave para efeitos de hover */
-  text-shadow: 0 0 3px rgba(50, 205, 50, 0.4); /* **NOVO**: Brilho sutil */
+  text-decoration: none;
+  color: #32cd32;
+  font-size: 1.1em;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 3px rgba(50, 205, 50, 0.4);
+  padding: 5px 0;
 }
 
+/* Estilo ao passar o mouse na navegação*/
 .nav-links li a:hover {
-  color: #adff2f; /* **NOVO**: Cor verde mais clara no hover */
-  text-shadow: 0 0 8px rgba(173, 255, 47, 0.6); /* **NOVO**: Brilho mais forte no hover */
+  color: #adff2f;
+  text-shadow: 0 0 8px rgba(173, 255, 47, 0.6);
 }
 
 /* Estilos do conteúdo principal*/
