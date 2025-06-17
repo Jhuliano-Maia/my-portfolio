@@ -1,0 +1,9 @@
+# Ignorar arquivos de configuração do VS Code
+.vscode/
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar pasta de dependências do Node.js
+node_modules/ 
