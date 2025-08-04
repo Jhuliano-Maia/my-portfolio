@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#blog-content {
+  margin-top: 10px;
+}
+
+.blog-post-grid {
+  display: grid;
+  gap: 30px;
+}
+
+.blog-post {
+  flex-direction: column;
+  padding: 30px 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--primary-green, #32cd32);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--glow-effect, rgba(50, 205, 50, 0.5));
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 43em;
+  height: 20em;
+}
+
+.blog-post-grid img {
+  width: 38em;
+  height: 9em;
+}
+
+.blog-post-grid a {
+  color: #adff2f;
+  text-decoration: none;
+}

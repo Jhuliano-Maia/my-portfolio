@@ -12,13 +12,13 @@ body {
   text-shadow: 0 0 5px rgba(50, 205, 50, 0.5);
   box-sizing: border-box;
   overflow-x: hidden;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 
 /* Estilos do Cabeçalho */
 header {
   text-align: left;
-  padding: 5px 40px 20px 40px;
+  padding: 5px 40px 0px 40px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -27,9 +27,9 @@ header {
   top: 0;
   width: 100%;
   background-color: #1a1a1a;
-  z-index: 500;
+  z-index: 400;
   box-sizing: border-box;
-  height: auto;
+  box-shadow: 0 -2px 10px rgba(50, 205, 50, 0.4);
 }
 
 header div.title-group {
@@ -40,7 +40,7 @@ header div.title-group {
 
 /* Estilos do nome/título */
 header h1 {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 5px;
   margin-top: 0;
   color: #adff2f;
@@ -49,7 +49,7 @@ header h1 {
 
 /* Estilos do parágrafo de subtítulo */
 header p {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #adff2f;
   margin-top: 0;
   text-shadow: 0 0 5px rgba(173, 255, 47, 0.5);
@@ -119,5 +119,4 @@ footer {
   font-size: 1em;
   text-shadow: 0 0 3px rgba(173, 255, 47, 0.4);
   box-shadow: 0 -2px 10px rgba(50, 205, 50, 0.4);
-  z-index: 600;
 }
