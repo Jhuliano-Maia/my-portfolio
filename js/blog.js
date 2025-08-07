@@ -14,7 +14,7 @@ async function carregarPosts() {
           <img src="${post.image_url}" alt="${post.title}">
           <h1>${post.title}</h1>
           <p>${post.excerpt}</p>
-          <a href="${post.link}.html">Leia mais</a>
+          <a href="post.html?id=${doc.id}">Leia mais</a>
         `;
 
       container.appendChild(postElement);
