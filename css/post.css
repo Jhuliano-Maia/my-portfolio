@@ -1,0 +1,23 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-post {
+  flex-direction: column;
+  padding: 30px 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--primary-green, #32cd32);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--glow-effect, rgba(50, 205, 50, 0.5));
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 43em;
+}
+
+.blog-post img {
+  width: 38em;
+  height: 20em;
+  object-fit: fill;
+  border: 1px solid var(--light-green, #adff2f);
+}
