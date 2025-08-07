@@ -27,7 +27,9 @@ main {
 
 .blog-post-grid img {
   width: 38em;
-  height: 9em;
+  height: 10em;
+  object-fit: fill;
+  border: 1px solid var(--light-green, #adff2f);
 }
 
 .blog-post-grid a {
