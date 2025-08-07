@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
-    <link rel="stylesheet" href="css/blog.css" />
+    <title>Post</title>
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/post.css" />
   </head>
   <body>
     <header>
@@ -24,15 +24,7 @@
     </header>
 
     <main>
-      <section id="blog-content" class="blog-section">
-        <h2>Meus Posts</h2>
-        <p>
-          Pensamentos e estudos sobre Engenharia de Software, programação e
-          tecnologia.
-        </p>
-
-        <div class="blog-post-grid" id="post-container"></div>
-      </section>
+      <div class="post-grid" id="post-container"></div>
     </main>
 
     <footer>
@@ -43,6 +35,6 @@
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 
     <script src="js/firebase.js"></script>
-    <script src="js/blog.js"></script>
+    <script src="js/post.js"></script>
   </body>
 </html>

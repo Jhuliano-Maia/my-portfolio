@@ -3,15 +3,6 @@ main {
   justify-content: center;
 }
 
-#blog-content {
-  margin-top: 10px;
-}
-
-.blog-post-grid {
-  display: grid;
-  gap: 30px;
-}
-
 .blog-post {
   flex-direction: column;
   padding: 30px 40px;
@@ -22,17 +13,11 @@ main {
   box-sizing: border-box;
   overflow: hidden;
   width: 43em;
-  height: 20em;
 }
 
-.blog-post-grid img {
+.blog-post img {
   width: 38em;
-  height: 10em;
+  height: 20em;
   object-fit: fill;
   border: 1px solid var(--light-green, #adff2f);
-}
-
-.blog-post-grid a {
-  color: #adff2f;
-  text-decoration: none;
 }
